@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(202, 227, 219);
+}
+.mydivs{
+
+    height: 100vh;
+    overflow: hidden;
+}
+#btn1, #btn2, #btn3, #btn4{
+
+   visibility: hidden; 
+   position: absolute;
+}
+.arrowdown::after{
+    content: "";
+
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin: auto;
+    top:40rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-right: 4px solid rgba(255,255,255,0.3);
+    border-bottom: 4px solid rgba(255,255,255,0.3);
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+#div1{
+    background-color: rgb(199, 215, 215);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+}
+#div1 h1{
+    margin: 1rem;
+    text-align: 1px 1px 5px rgb(200, 30, 30,1);
+}
+
+#div1 i{
+    font-size: 1.5rem;
+}
+#div1 p{
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    font-size: 1.2rem;
+}
+.img-div{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.img-div div{
+ 
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    background-color: rgb(6, 6, 6);
+}
+
+.img-div div img{
+    height: 200px;
+    border-radius: 50%;
+}
+#div2{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background:url(./img/computer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+   
+}
+#div2 div{
+
+    background-color: rgba(237, 83, 83, 0.2);
+    height: 100vh;
+    width: 100vw;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#div2 div img{
+
+    height: 200px;
+    width:200px;
+    margin-top: 10%;
+}
+#div2 div h1{
+
+    margin: 30px auto 30px;
+}
+#div2 div p{
+line-height: 1.5;
+letter-spacing: 0.5px;
+font-size: 1.2rem;
+}
+
+#div3{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 0px 10% 0px;
+
+}
+#skill_title{
+    width: 100%;
+    padding: 50px;
+}
+.skills-wrap{
+    display: inline;
+}
+.skills{
+
+    background-color: rgb(224, 218, 210);
+    border: 1px solid black;
+    width: 30%;
+    margin: 5px 5px 20px;
+    padding: 25px;
+    height: auto;
+    display: inline-block;
+}
+.skills img{
+    width: 50%;
+    height: auto;
+}
+.skills h3 {
+    margin-top: 20px; 
+
+}
+.skills p{
+    margin-top: 20px;
+}
+
+#div4{
+    background: url(./img/computer2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    
+}
+#div4 h1{
+color: white;
+margin: 15px;
+}
+#div4 p{
+    color: white;
+    margin: 15px;
+    font-size: 1.5rem;
+}
+.overplay{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+  
+}
+form{
+
+    padding: 10px;
+}
+form input, form textarea, button{
+
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 7px;
+}
+form input:focus{
+    outline: none;
+}
+form textarea{
+    font-family: inherit;
+}
+form textarea:focus{
+    outline: none;
+    font-size: 1.5rem;
+}
+form button{
+
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease-in;
+}
+form button:hover{
+    background-color: rgb(190, 105, 105);
+    color: white;
+}
